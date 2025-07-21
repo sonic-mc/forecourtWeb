@@ -1,0 +1,56 @@
+<?php
+
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\AccountController;
+
+Route::get('/users', [UserController::class, 'findAllUsers']);
+Route::post('/login-user', [UserController::class, 'login']);
+
+
+
+Route::middleware(['auth'])->prefix('account')->group(function () {
+    Route::get('/register-account', function () {
+        return view('account.register');
+    })->name('account.register');
+    Route::post('/register-account', [UserController::class, 'register'])->name('account.register');
+    // Route::put('/users/addAccount/{id}', [UserController::class, 'create'])->name('account.create');
+    // Route::put('/users/addAccount/{id}', [UserController::class, 'addAccount'])->name('account.store');
+    Route::get('/list', [AccountController::class, 'index'])->name('account.index');
+    Route::put('/freeze/{accountId}', [AccountController::class, 'freeze'])->name('account.freeze');
+    Route::get('/show/{accountId}', [AccountController::class, 'show'])->name('account.show');
+    Route::get('/balance/{accountId}', [AccountController::class, 'balance'])->name('account.balance');
+    Route::delete('/delete/{accountId}', [AccountController::class, 'destroy'])->name('account.destroy');
+});
+
+
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
