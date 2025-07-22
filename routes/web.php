@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\AccountController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/users', [UserController::class, 'findAllUsers']);
 Route::post('/login-user', [UserController::class, 'login']);
-
 
 
 Route::middleware(['auth'])->prefix('account')->group(function () {
@@ -27,8 +27,6 @@ Route::middleware(['auth'])->prefix('account')->group(function () {
         return view('account.register');
     })->name('account.register');
     Route::post('/register-account', [UserController::class, 'register'])->name('account.register');
-    // Route::put('/users/addAccount/{id}', [UserController::class, 'create'])->name('account.create');
-    // Route::put('/users/addAccount/{id}', [UserController::class, 'addAccount'])->name('account.store');
     Route::get('/list', [AccountController::class, 'index'])->name('account.index');
     Route::put('/freeze/{accountId}', [AccountController::class, 'freeze'])->name('account.freeze');
     Route::get('/show/{accountId}', [AccountController::class, 'show'])->name('account.show');
@@ -43,9 +41,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

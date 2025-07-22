@@ -5,6 +5,62 @@ namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\Controller;
+use App\Models\RegisteredUser;
+
+class AuthController extends Controller
+{
+    protected $apiBase = "http://95.111.246.245:9345/api";
+
+    public function login(Request $request)
+    {
+        $validated = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|string|min:6',
+        ]);
+
+        $response = Http::post("{$this->apiBase}/users/login", [
+            'email' => $validated['email'],
+            'password' => $validated['password'],
+        ]);
+
+        if ($response->successful()) {
+            $userData = $response->json();
+
+            // Optionally store in session
+            session(['user' => $userData]);
+
+            return redirect()->route('dashboard')->with('success', 'Login successful!');
+        } else {
+            return back()->withErrors(['login_error' => 'Invalid credentials or server error.']);
+        }
+    }
+
+        public function loginToApiAccount(Request $request)
+        {
+            $request->validate([
+                'email' => 'required|email',
+                'password' => 'required|string|min:6',
+            ]);
+
+            $response = Http::post("http://95.111.246.245:9345/api/users/login", [
+                'email' => $request->email,
+                'password' => $request->password,
+            ]);
+
+            if ($response->successful()) {
+                $apiUser = $response->json();
+
+                // Store the API account in session separately
+                session(['linked_api_user' => $apiUser]);
+
+                return redirect()->route('dashboard')->with('success', 'Linked API account logged in!');
+            }
+
+            return back()->withErrors(['api_login_error' => 'Failed to log into API account']);
+        }
+
+            }
+
 
 
 class UserController extends Controller
@@ -16,24 +72,6 @@ class UserController extends Controller
         $this->apiBase = config('services.external_api.base_url');
     }
 
-    public function login(Request $request)
-    {
-        $response = Http::post("{$this->apiBase}/users/login", [
-            'email' => $request->email,
-            'password' => $request->password,
-        ]);
-
-        if ($response->successful()) {
-            $data = $response->json();
-
-            // Save token if returned
-            session(['api_token' => $data['token'] ?? null]);
-
-            return response()->json($data);
-        }
-
-        return response()->json(['error' => 'Login failed'], $response->status());
-    }
 
     public function findAllUsers()
     {
@@ -50,29 +88,6 @@ class UserController extends Controller
         return view('account.create', compact('accountTypes'));
     }
 
-    // Store: Send request to API to create account
-    // public function addAccount(Request $request)
-    // {
-    //     $userId = $request->input('user_id');
-    //     $accountType = $request->input('accountType');
-    
-    //     try {
-    //         $response = Http::withOptions([
-    //             'query' => [
-    //                 'accountType' => $accountType
-    //             ]
-    //         ])->put("http://95.111.246.245:9345/api/users/addAccount/{$userId}");
-    
-    //         if ($response->successful()) {
-    //             return redirect()->back()->with('success', 'Account created successfully!');
-    //         } else {
-    //             return redirect()->back()->with('error', 'API Error: ' . $response->body());
-    //         }
-    //     } catch (\Exception $e) {
-    //         return redirect()->back()->with('error', 'Failed to create account: ' . $e->getMessage());
-    //     }
-    // }
-    
     public function register(Request $request)
     {
         $validated = $request->validate([
@@ -91,6 +106,13 @@ class UserController extends Controller
             ]);
     
             if ($response->successful()) {
+                // Save registered user locally
+                RegisteredUser::create([
+                    'user_id' => auth()->id(),
+                    'api_user_name' => $validated['name'],
+                    'api_user_email' => $validated['email'],
+                ]);
+    
                 return redirect()->back()->with('success', 'User registered successfully!');
             } else {
                 return redirect()->back()->with('error', 'API Error: ' . $response->body());
