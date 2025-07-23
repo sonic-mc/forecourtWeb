@@ -115,7 +115,7 @@ public function showRegisteredUsers()
         }
 
     } catch (\Exception $e) {
-        // dd($e->getMessage());
+
         return back()->with('error', 'Error: ' . $e->getMessage());
     }
 }
