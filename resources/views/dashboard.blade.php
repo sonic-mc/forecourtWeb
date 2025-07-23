@@ -58,6 +58,46 @@
                     @else
                         <p class="mt-2 text-sm">No registered users found.</p>
                     @endif
+                   <!-- Show success message -->
+@if(session('success'))
+<div class="p-4 mb-4 text-green-800 bg-green-100 border border-green-300 rounded">
+    {{ session('success') }}
+</div>
+@endif
+
+<!-- Show login errors -->
+@if($errors->has('login'))
+<div class="p-4 mb-4 text-red-800 bg-red-100 border border-red-300 rounded">
+    {{ $errors->first('login') }}
+</div>
+@endif
+
+@foreach ($registeredUsers as $user)
+<div class="p-4 border mb-4 rounded-md bg-white shadow">
+    <p><strong>Name:</strong> {{ $user->api_user_name }}</p>
+    <p><strong>Email:</strong> {{ $user->api_user_email }}</p>
+
+    <!-- Login Form -->
+    <form method="POST" action="{{ route('registered.login') }}">
+        @csrf
+        <input type="hidden" name="email" value="{{ $user->api_user_email }}">
+
+        <div class="mt-2">
+            <label>Password:</label>
+            <input type="password" name="password" class="border p-1 rounded w-full" required>
+        </div>
+
+        @if($errors->has('password'))
+            <p class="text-red-600 text-sm mt-1">{{ $errors->first('password') }}</p>
+        @endif
+
+        <button type="submit" class="mt-2 bg-blue-600 text-black px-3 py-1 rounded">
+            Login as this user
+        </button>
+    </form>
+</div>
+@endforeach
+
 
                 </div>
             </div>

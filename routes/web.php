@@ -52,3 +52,8 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::post('/registered-user/login', [DashboardController::class, 'loginRegisteredUser'])->name('registered.login');
+
+Route::get('/registered/profile', [DashboardController::class, 'showProfile'])->name('registered.profile');
+Route::put('/registered/account/{id}', [DashboardController::class, 'addAccount'])->name('registered.addAccount');

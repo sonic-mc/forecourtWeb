@@ -13,5 +13,14 @@ class RegisteredUser extends Model
         'user_id',
         'api_user_name',
         'api_user_email',
+        'name',
+         'email',
+     'phoneNumber',
     ];
+
+    public function accounts()
+{
+    return $this->hasMany(Account::class, 'registered_user_id');
+}
+
 }
