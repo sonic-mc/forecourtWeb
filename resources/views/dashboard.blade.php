@@ -5,6 +5,16 @@
         </h2>
     </x-slot>
 
+   
+    <div class="container mx-auto p-4">
+        <!-- Link to Registered Users -->
+        <a href="{{ route('registered.users') }}" class="text-blue-600 hover:text-blue-800">
+            View Registered Users
+        </a>
+    </div>
+
+    
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -30,6 +40,7 @@
                     @else
                         <p class="mt-2 text-sm">No linked accounts found.</p>
                     @endif
+
 
                     <!-- Registered Users Section -->
                     <h3 class="mt-10 text-lg font-bold">All Registered Users:</h3>

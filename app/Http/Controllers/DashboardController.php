@@ -94,5 +94,30 @@ public function addAccount(Request $request, $id)
     }
 }
 
+public function showRegisteredUsers()
+{
+    try {
+        $response = Http::get('http://95.111.246.245:9345/api/users/findAll');
+        
+
+        if ($response->successful()) {
+            $users = $response->json();
+
+            // Ensure we only pass valid array data to the view
+            if (is_array($users)) {
+                return view('dashboard.registered-users', compact('users'));
+            } else {
+                return back()->with('error', 'Invalid response format from API.');
+            }
+
+        } else {
+            return back()->with('error', 'Failed to fetch users. Status Code: ' . $response->status());
+        }
+
+    } catch (\Exception $e) {
+        // dd($e->getMessage());
+        return back()->with('error', 'Error: ' . $e->getMessage());
+    }
+}
 
 }

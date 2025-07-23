@@ -57,3 +57,6 @@ Route::post('/registered-user/login', [DashboardController::class, 'loginRegiste
 
 Route::get('/registered/profile', [DashboardController::class, 'showProfile'])->name('registered.profile');
 Route::put('/registered/account/{id}', [DashboardController::class, 'addAccount'])->name('registered.addAccount');
+
+Route::get('/registered-users', [DashboardController::class, 'showRegisteredUsers'])->name('registered.users');
+
