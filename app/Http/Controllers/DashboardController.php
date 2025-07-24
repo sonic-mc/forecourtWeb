@@ -120,4 +120,36 @@ public function showRegisteredUsers()
     }
 }
 
+  // Show the form to select account
+  public function showAccountForm()
+  {
+      // You can fetch available IDs dynamically if needed
+      $accountIds = range(1, 10); // Example IDs
+
+      return view('dashboard.account', compact('accountIds'));
+  }
+
+  // Handle the form and fetch account data
+  public function fetchAccount(Request $request)
+  {
+      $request->validate([
+          'account_id' => 'required|integer',
+      ]);
+
+      $accountId = $request->account_id;
+
+      $response = Http::accept('*/*')->get("http://95.111.246.245:9345/api/accounts/getAccount/{$accountId}");
+
+      if ($response->successful()) {
+          $account = $response->json();
+          return view('dashboard.account', [
+              'account' => $account,
+              'accountIds' => range(1, 10)
+          ]);
+      } else {
+          return back()->withErrors('Failed to fetch account details.');
+      }
+  }
 }
+
+

@@ -60,3 +60,6 @@ Route::put('/registered/account/{id}', [DashboardController::class, 'addAccount'
 
 Route::get('/registered-users', [DashboardController::class, 'showRegisteredUsers'])->name('registered.users');
 
+
+Route::get('/dashboard/account', [DashboardController::class, 'showAccountForm'])->name('dashboard.account.form');
+Route::post('/dashboard/account', [DashboardController::class, 'fetchAccount'])->name('dashboard.account.fetch');

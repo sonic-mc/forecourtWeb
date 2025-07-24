@@ -13,6 +13,9 @@
         </a>
     </div>
 
+    <a href="{{ route('dashboard.account.form') }}" class="btn btn-info">
+        Fetch Account Info
+    </a>
     
 
     <div class="py-12">
