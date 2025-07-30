@@ -6,6 +6,11 @@
     <title>Forecourt Management Solutions - Fuel Handling Equipment Experts</title>
     <meta name="description" content="Professional fuel handling equipment services including tank calibration, installation, repair and calibration. Serving Zimbabwe with expert solutions.">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+    
+    <link rel="shortcut icon" href="{{ URL::asset('icon.png')}}" rel="favicon">
     <style>
         * {
             margin: 0;
@@ -14,29 +19,32 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-primary);
             overflow-x: hidden;
         }
 
         /* Header & Navigation */
         .header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: rgba(30, 58, 138, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             color: white;
-            padding: 1rem 0;
+            padding: 0.75rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
         .header.scrolled {
-            background: rgba(30, 58, 138, 0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(30, 58, 138, 0.98);
             padding: 0.5rem 0;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
         }
 
         .nav-container {
@@ -55,8 +63,8 @@
         }
 
         .logo-icon {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             background: linear-gradient(135deg, #ff6b35, #f7931e);
             border-radius: 10px;
             display: flex;
@@ -107,121 +115,172 @@
             color: white;
             font-size: 1.5rem;
             cursor: pointer;
+            padding: 0.5rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            z-index: 1002;
         }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a"><stop offset="0" stop-color="%23ff6b35"/><stop offset="1" stop-color="%23f7931e"/></radialGradient></defs><rect width="1000" height="1000" fill="url(%23a)" opacity="0.1"/></svg>');
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            color: white;
-            position: relative;
-            margin-top: 80px;
+        .mobile-menu-toggle:hover {
+            background: rgba(255, 255, 255, 0.1);
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="white" opacity="0.1"/><circle cx="80" cy="40" r="1" fill="white" opacity="0.1"/><circle cx="40" cy="80" r="1.5" fill="white" opacity="0.1"/></svg>');
-            animation: float 20s ease-in-out infinite;
-        }
+       /* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.8)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a"><stop offset="0" stop-color="%23ff6b35"/><stop offset="1" stop-color="%23f7931e"/></radialGradient></defs><rect width="1000" height="1000" fill="url(%23a)" opacity="0.1"/></svg>');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    padding: 2rem 1rem;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 80px;
+}
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="white" opacity="0.1"/><circle cx="80" cy="40" r="1" fill="white" opacity="0.1"/><circle cx="40" cy="80" r="1.5" fill="white" opacity="0.1"/></svg>');
+    animation: float 20s ease-in-out infinite;
+    z-index: 0;
+}
 
-        .hero-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
 
-        .hero-content h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            background: linear-gradient(135deg, #ffffff, #f1f5f9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
 
-        .hero-content .highlight {
-            color: #ff6b35;
-            font-weight: 800;
-        }
+.hero-content h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
-        .hero-content p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            line-height: 1.6;
-        }
+.hero-content .highlight {
+    color: #ff6b35;
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+}
 
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+.hero-content p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+}
 
-        .btn {
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        .btn-primary {
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
-            color: white;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
-        }
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    min-width: 150px;
+}
 
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.6);
-        }
+.btn-primary {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
 
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.6);
+}
 
-        .btn-secondary:hover {
-            background: white;
-            color: #1e3a8a;
-            transform: translateY(-3px);
-        }
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
 
-        .hero-visual {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.btn-secondary:hover {
+    background: white;
+    color: #1e3a8a;
+    transform: translateY(-3px);
+}
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.8rem, 5.5vw, 2.5rem);
+    }
+
+    .hero-content p {
+        font-size: 1.05rem;
+    }
+}
 
         .fuel-pump-icon {
             width: 300px;
@@ -520,62 +579,76 @@
             color: #94a3b8;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .mobile-menu-toggle {
-                display: block;
-            }
+       /* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
 
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: #1e3a8a;
-                flex-direction: column;
-                padding: 1rem;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            }
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #1e3a8a;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 
-            .nav-menu.active {
-                display: flex;
-            }
+    .nav-menu.active {
+        display: flex;
+    }
 
-            .hero-container {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 2rem;
-            }
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
 
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
+    .hero-content {
+        text-align: center;
+    }
 
-            .fuel-pump-icon {
-                width: 200px;
-                height: 200px;
-                font-size: 5rem;
-            }
+    .hero-content h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
 
-            .about-container,
-            .contact-container {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
+    .hero-content p {
+        font-size: 1rem;
+    }
 
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
 
-            .hero-buttons {
-                justify-content: center;
-            }
+    .fuel-pump-icon {
+        width: 180px;
+        height: 180px;
+        font-size: 4rem;
+        margin: 0 auto;
+    }
 
-            .stats {
-                grid-template-columns: 1fr;
-            }
-        }
+    .about-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
 
         /* Animations */
         .fade-in {
@@ -799,8 +872,15 @@
             width: 100%;
             max-height: 90vh;
             overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: none;
             position: relative;
             animation: modalSlideIn 0.3s ease;
+        }
+
+                /* Hide scrollbars - WebKit browsers (Chrome, Safari) */
+        .modal-content::-webkit-scrollbar {
+            display: none;
         }
 
         @keyframes modalSlideIn {
@@ -885,12 +965,15 @@
     <header class="header" id="header">
         <div class="nav-container">
             <div class="logo">
-                <div class="logo-icon">F</div>
+                <a href="{{ url('/') }}">
+                    <img src="{{ URL::asset('logo.png') }}" alt="FORECOURT Logo" style="height: 60px; width: auto;">
+                </a>
                 <div class="logo-text">
-                    <h1>FORECOURT</h1>
-                    <p>Management Solutions</p>
+                    <h1 style="margin: 0; font-size: 20px;">FORECOURT</h1>
+                    <p style="margin: 0; font-size: 12px;">Management Solutions</p>
                 </div>
             </div>
+    
             <nav>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home">Home</a></li>
@@ -909,8 +992,9 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content fade-in">
-                <h1><span class="highlight">FUEL HANDLING</span><br>EQUIPMENT EXPERTS</h1>
+                <h1><span class="highlight"></span><br>FUEL EQUIPMENT EXPERTS</h1>
                 <p>Professional supply, installation, repair & calibration services for service stations across Zimbabwe. Your trusted partner in fuel infrastructure solutions.</p>
+    
                 <div class="hero-buttons">
                     <a href="#services" class="btn btn-primary">
                         <i class="fas fa-tools"></i>
@@ -929,6 +1013,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- Services Section -->
     <section class="services" id="services">
@@ -1312,7 +1397,7 @@
                         </div>
                         <div>
                             <h4>Phone Numbers</h4>
-                            <p>+263 782 287 162<br>+263 785 862 182</p>
+                            <p>+263 785 862 182<br>+263 782 287 162</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1321,8 +1406,8 @@
                         </div>
                         <div>
                             <h4>Email Address</h4>
-                            <p>Mukorokojames60@gmail.com</p>
-                            <p>ngwenyasheunesu17@gmail.com</p>
+                            <p><a href="mailto:Mukorokojames60@gmail.com">Mukorokojames60@gmail.com</a></p>
+                            <p><a href="mailto:ngwenyasheunesu17@gmail.com">ngwenyasheunesu17@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1383,7 +1468,20 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p>Stand No 17044 Carlton Road<br>Graniteside, Harare<br>+263 782 287 162</p>
+                    <p>
+                        Stand No 17044 Carlton Road<br>
+                        Graniteside, Harare<br>
+                        +263 785 862 182
+                    </p>
+                    
+                    <div class="social-icons">
+                        <a href="https://wa.me/263785862182" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com/YourPageUsername" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -1583,7 +1681,7 @@
                         }
                         requestAnimationFrame(updateCounter);
                     } else {
-                        counter.textContent = counter.textContent; 
+                        counter.textContent = counter.textContent;
                     }
                 };
                 
@@ -2013,7 +2111,7 @@
 
             if (loadMoreBtn) {
                 loadMoreBtn.addEventListener('click', () => {
-                    const hiddenCards = Array.from(projectCards).filter(card => 
+                    const hiddenCards = Array.from(projectCards).filter(card =>
                         card.style.display === 'none'
                     );
                     
@@ -2083,13 +2181,13 @@
 
         // Console welcome message
         console.log(`
-        %c🚀 Welcome to Forecourt Management Solutions! 
+        %c🚀 Welcome to Forecourt Management Solutions!
         %c
         Professional fuel handling equipment services.
         Built with modern web technologies for optimal performance.
         
         Need help? Contact us at: Mukorokojames60@gmail.com
-        `, 
+        `,
         'color: #ff6b35; font-size: 16px; font-weight: bold;',
         'color: #64748b; font-size: 12px;'
         );
