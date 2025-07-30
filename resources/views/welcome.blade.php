@@ -970,7 +970,7 @@
                 </a>
                 <div class="logo-text">
                     <h1 style="margin: 0; font-size: 20px;">FORECOURT</h1>
-                    <p style="margin: 0; font-size: 12px;">Management Solutions</p>
+                    <p style="margin: 0; font-size: 10px;">Management Solutions</p>
                 </div>
             </div>
     
@@ -1090,7 +1090,7 @@
                 <!-- Project 1 -->
                 <div class="project-card fade-in" data-category="construction">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=600&h=400&fit=crop&crop=center" alt="Service Station Construction" loading="lazy">
+                        <img src="https://totalenergies.com/sites/g/files/nytnzq121/files/styles/350x230_block_50_50/public/images/2024-06/totalenergies_station-service-maroc-bouregreg_2024.png?h=e4a92b5c&itok=_032juPA" alt="Service Station Construction" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Modern Service Station Build</h3>
@@ -1140,7 +1140,7 @@
                 <!-- Project 3 -->
                 <div class="project-card fade-in" data-category="installation">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=600&h=400&fit=crop&crop=center" alt="Fuel Dispenser Installation" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU2Og9T9YTOyMmwt-B2pTwnDXl2C2kJOhbNA&s" alt="Fuel Dispenser Installation" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Fuel Dispenser Installation</h3>
@@ -1157,7 +1157,7 @@
                         <p>Installation of 8 modern fuel dispensers with electronic payment systems and leak detection.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> January 2024</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Bulawayo</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Aspindale Harare</span>
                         </div>
                     </div>
                 </div>
@@ -1190,7 +1190,7 @@
                 <!-- Project 5 -->
                 <div class="project-card fade-in" data-category="calibration">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center" alt="Flowmeter Calibration" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTVXAsM0JRP0c2Xg9QfYSw9DCSDqy_SwEEhg&s" alt="Flowmeter Calibration" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Flowmeter Calibration</h3>
@@ -1207,7 +1207,7 @@
                         <p>Calibration of electronic flowmeters for accurate fuel measurement and legal compliance.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> November 2023</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Gweru</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Redan Masasa, Harare</span>
                         </div>
                     </div>
                 </div>
@@ -1215,7 +1215,7 @@
                 <!-- Project 6 -->
                 <div class="project-card fade-in" data-category="construction">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop&crop=center" alt="Tank Installation" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdlXKX-a4PHfBzvIPZ1cENOb3764bIuVVcQ&s" alt="Tank Installation" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Underground Tank Installation</h3>
@@ -1232,7 +1232,7 @@
                         <p>Installation of double-wall underground tanks with environmental monitoring systems.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> October 2023</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Marondera</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Redan, Harare CBD</span>
                         </div>
                     </div>
                 </div>
