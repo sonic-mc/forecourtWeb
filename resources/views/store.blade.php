@@ -1239,6 +1239,26 @@
                     </div>
                 </div>
             </div>
+
+            <div class="product-card" data-category="safety">
+                <div class="status-badge status-available">Available</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <div class="product-category">Safety Equipment</div>
+                    <h3 class="product-title">Shear Valve</h3>
+                    <p class="product-description">Impact-activated shear valve designed to automatically shut off fuel flow during dispenser collisions.</p>
+                    <ul class="product-features">
+                        <li>Automatic shut-off on impact</li>
+                        <li>Prevents fuel spills</li>
+                        <li>Fire safety compliance</li>
+                        <li>Protects underground piping</li>
+                    </ul>
+                    <div class="product-footer">
+                        <div class="product-price">Contact Us</div>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
