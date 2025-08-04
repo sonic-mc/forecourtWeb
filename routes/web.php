@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\App as FacadesApp;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\App as FacadesApp;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +23,6 @@ if(FacadesApp::environment('production')) {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/store', [PageController::class, 'store'])->name('store');
+
