@@ -563,7 +563,9 @@
 
             <div class="product-card" data-category="pumps">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/ex50.jpg" alt="ex50">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Fuel Pumps</div>
                     <h3 class="product-title">PIUSI EX50/EX75 ATEX</h3>
@@ -583,7 +585,9 @@
 
             <div class="product-card" data-category="pumps">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/submersive.jpg" alt="submersive">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Fuel Pumps</div>
                     <h3 class="product-title">Submersible Pumps</h3>
@@ -603,7 +607,9 @@
 
             <div class="product-card" data-category="pumps">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/vane.jpg" alt="vane">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Fuel Pumps</div>
                     <h3 class="product-title">Vane Pump</h3>
@@ -623,7 +629,9 @@
 
             <div class="product-card" data-category="pumps">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/gear.jpg" alt="gear">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Fuel Pumps</div>
                     <h3 class="product-title">Gear Pump</h3>
@@ -644,7 +652,9 @@
             <!-- Hoses & Nozzles -->
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/hose.jpg" alt="hose">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Hoses & Nozzles</div>
                     <h3 class="product-title">Fuel Dispensing Hose</h3>
@@ -664,7 +674,9 @@
 
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/opw.jpg" alt="opw">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Nozzles</div>
                     <h3 class="product-title">Auto Nozzles (OPW)</h3>
@@ -683,8 +695,9 @@
             </div>
 
             <div class="product-card" data-category="accessories">
-                <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/zva.jpg" alt="zva">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Nozzles</div>
                     <h3 class="product-title">Auto Nozzles (ZVA)</h3>
@@ -704,7 +717,9 @@
 
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/vapor.jpg" alt="vapor">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Nozzles</div>
                     <h3 class="product-title">Vapour Recovery Nozzle</h3>
@@ -725,7 +740,9 @@
              <!-- Filters -->
              <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/filter.jpg" alt="filter">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Filters</div>
                     <h3 class="product-title">DANGER Fuel Filters</h3>
@@ -746,7 +763,9 @@
             <!-- Meters & Registers -->
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/valve.jpg" alt="valve">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Meters & Registers</div>
                     <h3 class="product-title">Fuel Truck Meter Register Valve</h3>
@@ -766,7 +785,9 @@
 
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/meter.jpg" alt="meter">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Meters</div>
                     <h3 class="product-title">Flowmeter</h3>
@@ -787,6 +808,69 @@
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
                 <div class="product-image"></div>
+                <div class="product-info">
+                    <div class="product-category">Meters</div>
+                    <h3 class="product-title">PIUSI Digital Flow Meters</h3>
+                    <p class="product-description">PIUSI K24 and other digital flow meters for precise fuel measurement and monitoring.</p>
+                    <ul class="product-features">
+                        <li>Digital display</li>
+                        <li>High accuracy measurement</li>
+                        <li>Easy installation</li>
+                        <li>Multiple mounting options</li>
+                    </ul>
+                    <div class="product-footer">
+                        <div class="product-price">Contact Us</div>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accessories">
+                <div class="status-badge status-available">Available</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <div class="product-category">Meters</div>
+                    <h3 class="product-title">Fill-Rite Mechanical Flow Meters</h3>
+                    <p class="product-description">Fill-Rite mechanical flow meters with analog displays for reliable fuel measurement.</p>
+                    <ul class="product-features">
+                        <li>Mechanical operation</li>
+                        <li>No power required</li>
+                        <li>Proven reliability</li>
+                        <li>Easy maintenance</li>
+                    </ul>
+                    <div class="product-footer">
+                        <div class="product-price">Contact Us</div>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="accessories">
+                <div class="status-badge status-available">Available</div>
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <div class="product-category">Meters</div>
+                    <h3 class="product-title">Mechanical Fuel Dispenser Computer</h3>
+                    <p class="product-description">Internal mechanical computing unit for fuel dispensers with rotating number wheels for gallon and price calculation.</p>
+                    <ul class="product-features">
+                        <li>Mechanical operation</li>
+                        <li>Gallon and price calculation</li>
+                        <li>Rotating number display</li>
+                        <li>Durable construction</li>
+                    </ul>
+                    <div class="product-footer">
+                        <div class="product-price">Contact Us</div>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="accessories">
+                <div class="status-badge status-available">Available</div>
+                <div class="product-image">
+                    <img src="/images/pulser.jpg" alt="pulser">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Control Systems</div>
                     <h3 class="product-title">Pulser</h3>
@@ -848,7 +932,9 @@
              <!-- Testing Equipment -->
              <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/kolo.jpg" alt="kolo">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Testing Equipment</div>
                     <h3 class="product-title">Kolor Kut Water Finding Paste</h3>
@@ -889,7 +975,9 @@
             <!-- Piping Systems -->
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/pipe.jpg" alt="pipe">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Piping Systems</div>
                     <h3 class="product-title">Fuel System Pipes and Fittings</h3>
@@ -911,7 +999,9 @@
             <!-- Valves & Fittings -->
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/solenoid.jpg" alt="solenoid">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Valves</div>
                     <h3 class="product-title">Solenoid Valve</h3>
@@ -931,7 +1021,9 @@
 
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/joint.jpg" alt="joint">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Fittings</div>
                     <h3 class="product-title">Universal Joint</h3>
@@ -951,7 +1043,9 @@
 
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/swivel.jpg" alt="swivel">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Fittings</div>
                     <h3 class="product-title">Swivel</h3>
@@ -974,7 +1068,9 @@
             <!-- LPG Equipment -->
             <div class="product-card" data-category="lpg">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/separoter.jpg" alt="separoter">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">LPG Equipment</div>
                     <h3 class="product-title">LPG Separator</h3>
@@ -1035,16 +1131,18 @@
             <!-- Valves & Fittings -->
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/dipping.jpg" alt="Dipping Paste">
+                </div>
                 <div class="product-info">
-                    <div class="product-category">Valves</div>
-                    <h3 class="product-title">Solenoid Valve</h3>
-                    <p class="product-description">Electronic solenoid valves for automated fuel system control and safety applications.</p>
+                    <div class="product-category">Tank Accessories</div>
+                    <h3 class="product-title">Dipping Paste</h3>
+                    <p class="product-description">Reliable dipping paste for accurate detection of fuel or water levels in underground storage tanks.</p>
                     <ul class="product-features">
-                        <li>Electronic operation</li>
-                        <li>Quick response</li>
-                        <li>Various voltage options</li>
-                        <li>Fail-safe design</li>
+                        <li>High visibility color change</li>
+                        <li>Quick and accurate readings</li>
+                        <li>Compatible with fuel and water</li>
+                        <li>Essential for manual tank gauging</li>
                     </ul>
                     <div class="product-footer">
                         <div class="product-price">Contact Us</div>
@@ -1052,10 +1150,13 @@
                     </div>
                 </div>
             </div>
+            
 
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/joint.jpg" alt="joint">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Fittings</div>
                     <h3 class="product-title">Universal Joint</h3>
@@ -1075,7 +1176,9 @@
 
             <div class="product-card" data-category="accessories">
                 <div class="status-badge status-available">Available</div>
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="/images/swivel.jpg" alt="swivel">
+                  </div>
                 <div class="product-info">
                     <div class="product-category">Fittings</div>
                     <h3 class="product-title">Swivel</h3>
@@ -1092,6 +1195,29 @@
                     </div>
                 </div>
             </div>
+
+            <div class="product-card" data-category="fuel pumps">
+                <div class="status-badge status-available">Available</div>
+                <div class="product-image">
+                    <img src="/images/fuel.jpg" alt="Fuel Dispenser">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Fuel Pumps</div>
+                    <h3 class="product-title">Digital Fuel Dispenser</h3>
+                    <p class="product-description">High-accuracy digital fuel dispensers for efficient and reliable forecourt fueling operations.</p>
+                    <ul class="product-features">
+                        <li>Digital flow meters</li>
+                        <li>Durable weatherproof housing</li>
+                        <li>Preset volume & price options</li>
+                        <li>Multiple nozzle support</li>
+                    </ul>
+                    <div class="product-footer">
+                        <div class="product-price">Contact Us</div>
+                        <button class="inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+            
 
             <!-- Safety Equipment -->
             <div class="product-card" data-category="safety">
@@ -1115,6 +1241,7 @@
             </div>
         </div>
     </div>
+    
 
     <div class="floating-contact" title="Contact Sales">
         📞
