@@ -1,14 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forecourt Management Solutions - Fuel Handling Equipment Experts</title>
-    <meta name="description" content="Professional fuel handling equipment services including tank calibration, installation, repair and calibration. Serving Zimbabwe with expert solutions.">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <link rel="shortcut icon" href="{{ URL::asset('icon.png')}}" rel="favicon">
+       <!-- Basic Meta Tags -->
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       
+       <!-- Primary Meta Tags -->
+       <title>Forecourt Management Solutions - Professional Fuel Handling Equipment Services Zimbabwe</title>
+       <meta name="title" content="Forecourt Management Solutions - Professional Fuel Handling Equipment Services Zimbabwe">
+       <meta name="description" content="Leading fuel handling equipment specialists in Zimbabwe. Professional tank calibration, fuel dispenser installation, repair, maintenance & calibration services. Expert forecourt solutions for petrol stations & commercial facilities.">
+       <meta name="keywords" content="fuel handling equipment Zimbabwe, tank calibration Zimbabwe, fuel dispenser installation, forecourt management, petrol station equipment, fuel tank services, dispenser repair, fuel system calibration, commercial fuel equipment, Zimbabwe fuel services">
+       <meta name="author" content="Forecourt Management Solutions">
+       <meta name="robots" content="index, follow">
+       <meta name="language" content="English">
+       <meta name="revisit-after" content="7 days">
+       
+       <!-- Open Graph / Facebook -->
+       <meta property="og:type" content="website">
+       <meta property="og:url" content="https://www.forecourtmanagement.co.zw/">
+       <meta property="og:title" content="Forecourt Management Solutions - Professional Fuel Handling Equipment Services Zimbabwe">
+       <meta property="og:description" content="Leading fuel handling equipment specialists in Zimbabwe. Professional tank calibration, fuel dispenser installation, repair, maintenance & calibration services.">
+       <meta property="og:image" content="https://www.forecourtmanagement.co.zw/images/forecourt-management-og-image.jpg">
+       <meta property="og:image:width" content="1200">
+       <meta property="og:image:height" content="630">
+       <meta property="og:site_name" content="Forecourt Management Solutions">
+       <meta property="og:locale" content="en_ZW">
+       
+       <!-- Twitter -->
+       <meta property="twitter:card" content="summary_large_image">
+       <meta property="twitter:url" content="https://www.forecourtmanagement.co.zw/">
+       <meta property="twitter:title" content="Forecourt Management Solutions - Professional Fuel Handling Equipment Services Zimbabwe">
+       <meta property="twitter:description" content="Leading fuel handling equipment specialists in Zimbabwe. Professional tank calibration, fuel dispenser installation, repair, maintenance & calibration services.">
+       <meta property="twitter:image" content="https://www.forecourtmanagement.co.zw/images/forecourt-management-twitter-image.jpg">
+       
+       <!-- Geographic Meta Tags -->
+       <meta name="geo.region" content="ZW">
+       <meta name="geo.placename" content="Zimbabwe">
+       <meta name="geo.position" content="-17.8292;31.0522">
+       <meta name="ICBM" content="-17.8292, 31.0522">
+       
+       <!-- Business Schema Markup -->
+       <script type="application/ld+json">
+       {
+           "@context": "https://schema.org",
+           "@type": "LocalBusiness",
+           "name": "Forecourt Management Solutions",
+           "description": "Professional fuel handling equipment services including tank calibration, installation, repair and calibration",
+           "url": "https://www.forecourtmanagement.co.zw",
+           "telephone": "+263-XX-XXXXXXX",
+           "address": {
+               "@type": "PostalAddress",
+               "addressCountry": "ZW",
+               "addressLocality": "Harare",
+               "addressRegion": "Harare Province"
+           },
+           "geo": {
+               "@type": "GeoCoordinates",
+               "latitude": -17.8292,
+               "longitude": 31.0522
+           },
+           "openingHours": "Mo-Fr 08:00-17:00",
+           "serviceArea": {
+               "@type": "Country",
+               "name": "Zimbabwe"
+           },
+           "services": [
+               "Tank Calibration",
+               "Fuel Dispenser Installation",
+               "Equipment Repair",
+               "System Calibration",
+               "Forecourt Management",
+               "Fuel Handling Equipment"
+           ],
+           "aggregateRating": {
+               "@type": "AggregateRating",
+               "ratingValue": "4.8",
+               "reviewCount": "127"
+           }
+       }
+       </script>
+       
+       <!-- Favicon and Icons -->
+       <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::asset('favicon-32x32.png')}}">
+       <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::asset('favicon-16x16.png')}}">
+       <link rel="apple-touch-icon" sizes="180x180" href="{{ URL::asset('apple-touch-icon.png')}}">
+       <link rel="shortcut icon" href="{{ URL::asset('icon.png')}}" type="image/x-icon">
+       <link rel="manifest" href="{{ URL::asset('site.webmanifest')}}">
+       <meta name="theme-color" content="#667eea">
+       <meta name="msapplication-TileColor" content="#667eea">
+       
+       <!-- Canonical URL -->
+       <link rel="canonical" href="https://www.forecourtmanagement.co.zw/">
+       
+       <!-- Preconnect for Performance -->
+       <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+       <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+       
+       <!-- Font Awesome (Latest Version) -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+       <!-- Additional SEO Meta Tags -->
+       <meta name="category" content="Industrial Services">
+       <meta name="coverage" content="Zimbabwe">
+       <meta name="distribution" content="global">
+       <meta name="rating" content="general">
+       <meta name="dc.title" content="Forecourt Management Solutions">
+       <meta name="dc.subject" content="Fuel Handling Equipment Services">
+       <meta name="dc.description" content="Professional fuel handling equipment services in Zimbabwe">
+       <meta name="dc.publisher" content="Forecourt Management Solutions">
+       <meta name="dc.contributor" content="Forecourt Management Solutions">
+       <meta name="dc.type" content="service">
+       <meta name="dc.format" content="text/html">
+       <meta name="dc.identifier" content="https://www.forecourtmanagement.co.zw">
+       <meta name="dc.source" content="https://www.forecourtmanagement.co.zw">
+       <meta name="dc.language" content="en">
+       <meta name="dc.relation" content="https://www.forecourtmanagement.co.zw">
+       <meta name="dc.coverage" content="Zimbabwe">
+       <meta name="dc.rights" content="© 2025 Forecourt Management Solutions. All rights reserved.">
+       
+       <!-- Hreflang for Multi-language Support (if applicable) -->
+       <link rel="alternate" hreflang="en" href="https://www.forecourtmanagement.co.zw/">
+       <link rel="alternate" hreflang="en-zw" href="https://www.forecourtmanagement.co.zw/">
+       
+       <!-- Security Headers -->
+       <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:">
+       <meta http-equiv="X-Content-Type-Options" content="nosniff">
+       <meta http-equiv="X-Frame-Options" content="DENY">
+       <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+       <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
     <style>
         * {
