@@ -1210,7 +1210,7 @@
                 <!-- Project 1 -->
                 <div class="project-card fade-in" data-category="construction">
                     <div class="project-image">
-                        <img src="https://totalenergies.com/sites/g/files/nytnzq121/files/styles/350x230_block_50_50/public/images/2024-06/totalenergies_station-service-maroc-bouregreg_2024.png?h=e4a92b5c&itok=_032juPA" alt="Service Station Construction" loading="lazy">
+                        <img src="/images/harare.jpg" alt="Service Station Construction" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Modern Service Station Build</h3>
@@ -1223,7 +1223,7 @@
                     </div>
                     <div class="project-content">
                         <span class="project-tag">Construction</span>
-                        <h3>Harare Central Service Station</h3>
+                        <h3>Redan Service Station</h3>
                         <p>Full service station construction with modern fuel dispensers and underground tank installation.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> March 2024</span>
@@ -1235,7 +1235,7 @@
                 <!-- Project 2 -->
                 <div class="project-card fade-in" data-category="calibration">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop&crop=center" alt="Tank Calibration" loading="lazy">
+                        <img src="/images/redan.jpg" alt="Tank Calibration" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Precision Tank Calibration</h3>
@@ -1248,11 +1248,11 @@
                     </div>
                     <div class="project-content">
                         <span class="project-tag">Calibration</span>
-                        <h3>Storage Tank Calibration - Chitungwiza</h3>
+                        <h3>Redan Chitungwiza</h3>
                         <p>Precision calibration of 50,000L underground storage tanks using acoustic measurement technology.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> February 2024</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Chitungwiza</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Redan, Chitungwiza</span>
                         </div>
                     </div>
                 </div>
@@ -1273,7 +1273,7 @@
                     </div>
                     <div class="project-content">
                         <span class="project-tag">Installation</span>
-                        <h3>Multi-Product Dispenser Setup</h3>
+                        <h3>RK Services Station</h3>
                         <p>Installation of 8 modern fuel dispensers with electronic payment systems and leak detection.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> January 2024</span>
@@ -1285,7 +1285,7 @@
                 <!-- Project 4 -->
                 <div class="project-card fade-in" data-category="maintenance">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1485230405346-71acb9518d9c?w=600&h=400&fit=crop&crop=center" alt="Pump Maintenance" loading="lazy">
+                        <img src="/images/mendip.jpg"  alt="Pump Maintenance" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Submersible Pump Service</h3>
@@ -1298,11 +1298,11 @@
                     </div>
                     <div class="project-content">
                         <span class="project-tag">Maintenance</span>
-                        <h3>Submersible Pump Overhaul</h3>
+                        <h3>Mendipy Energy Service Station</h3>
                         <p>Complete maintenance and replacement of submersible pumps with performance testing.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> December 2023</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Mutare</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Mendip Energy</span>
                         </div>
                     </div>
                 </div>
@@ -1310,7 +1310,7 @@
                 <!-- Project 5 -->
                 <div class="project-card fade-in" data-category="calibration">
                     <div class="project-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTVXAsM0JRP0c2Xg9QfYSw9DCSDqy_SwEEhg&s" alt="Flowmeter Calibration" loading="lazy">
+                        <img src="/images/redann.jpg" alt="Flowmeter Calibration" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Flowmeter Calibration</h3>
@@ -1335,7 +1335,7 @@
                 <!-- Project 6 -->
                 <div class="project-card fade-in" data-category="construction">
                     <div class="project-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdlXKX-a4PHfBzvIPZ1cENOb3764bIuVVcQ&s" alt="Tank Installation" loading="lazy">
+                        <img src="/images/start.jpg" alt="Tank Installation" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Underground Tank Installation</h3>
@@ -1348,11 +1348,36 @@
                     </div>
                     <div class="project-content">
                         <span class="project-tag">Construction</span>
-                        <h3>Underground Storage Tank Project</h3>
+                        <h3>Total Energies Service Station</h3>
+                        <p>Construction from scratch</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> October 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Harare</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Project 6 -->
+                 <div class="project-card fade-in" data-category="construction">
+                    <div class="project-image">
+                        <img src="/images/tank.jpg" alt="Tank Installation" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Underground Tank Installation</h3>
+                                <p>Environmental safety compliance</p>
+                                <button class="view-project-btn" onclick="openProjectModal('project6')">
+                                    <i class="fas fa-eye"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Construction</span>
+                        <h3>Service Station</h3>
                         <p>Installation of double-wall underground tanks with environmental monitoring systems.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> October 2023</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Redan, Harare CBD</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Mutare</span>
                         </div>
                     </div>
                 </div>
@@ -1360,7 +1385,7 @@
                 <!-- Project 7 -->
                 <div class="project-card fade-in" data-category="maintenance">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&h=400&fit=crop&crop=center" alt="Leak Testing" loading="lazy">
+                        <img src="/images/reedan.jpg" alt="Leak Testing" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Leak Detection Service</h3>
@@ -1377,7 +1402,7 @@
                         <p>Advanced acoustic leak detection and pressure testing for underground storage systems.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> September 2023</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Kadoma</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Redan, Chisipiti</span>
                         </div>
                     </div>
                 </div>
@@ -1385,7 +1410,7 @@
                 <!-- Project 8 -->
                 <div class="project-card fade-in" data-category="installation">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop&crop=center" alt="Electrical Installation" loading="lazy">
+                        <img src="/images/elec.jpg" alt="Electrical Installation" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Electrical System Setup</h3>
@@ -1435,7 +1460,7 @@
                 <!-- Project 10 -->
                 <div class="project-card fade-in" data-category="construction">
                     <div class="project-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU-5XFa_xDs8r-SWp--0sG1COjNiwEi_bWUA&s" alt="Service Station Renovation" loading="lazy">
+                        <img src="/images/reno.jpg" alt="Service Station Renovation" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Station Modernization</h3>
@@ -1452,7 +1477,7 @@
                         <p>Complete modernization of existing service station with new equipment and safety upgrades.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> June 2023</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Chinhoyi</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Gweru</span>
                         </div>
                     </div>
                 </div>
