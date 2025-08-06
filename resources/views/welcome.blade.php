@@ -1427,7 +1427,7 @@
                         <p>Complete electrical installation including lighting, power distribution, and safety systems.</p>
                         <div class="project-meta">
                             <span><i class="fas fa-calendar"></i> August 2023</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Kwekwe</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Harare</span>
                         </div>
                     </div>
                 </div>
@@ -1435,7 +1435,7 @@
                 <!-- Project 9 -->
                 <div class="project-card fade-in" data-category="maintenance">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=600&h=400&fit=crop&crop=center" alt="Tank Cleaning" loading="lazy">
+                        <img src="/images/clean.jpg" alt="Tank Cleaning" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h3>Tank Cleaning Service</h3>
