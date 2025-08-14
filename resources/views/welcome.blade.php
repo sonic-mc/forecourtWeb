@@ -81,8 +81,6 @@
 }
 </script>
 
-      
-      <!-- Favicon and Icons -->
      <!-- Favicon and Icons -->
      <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::asset('favicon-32x32.png')}}">
      <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::asset('favicon-16x16.png')}}">
@@ -128,7 +126,6 @@
         <!-- Security Headers -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:">
         <meta http-equiv="X-Content-Type-Options" content="nosniff">
-        <meta http-equiv="X-Frame-Options" content="DENY">
         <meta http-equiv="X-XSS-Protection" content="1; mode=block">
         <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
@@ -2101,9 +2098,6 @@
             initLoadMore();
         });
 
-        // Make openProjectModal global
-        window.openProjectModal = openProjectModal;
-        window.closeProjectModal = closeProjectModal;
 
         // Performance optimization: Debounce scroll events
         function debounce(func, wait, immediate) {
