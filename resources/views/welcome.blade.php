@@ -1587,10 +1587,10 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="Tell us about your project requirements" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">
+                        <a href="https://wa.me/263785862182" target="_blank" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i>
                             Send Message
-                        </button>
+                        </a>
                     </form>
                 </div>
             </div>
