@@ -21,7 +21,7 @@
         <meta property="og:url" content="https://www.forecourt.co.zw/">
         <meta property="og:title" content="Forecourt Management Solutions - Professional Fuel Handling Equipment Services Zimbabwe">
         <meta property="og:description" content="Leading fuel handling equipment specialists in Zimbabwe. Professional tank calibration, fuel dispenser installation, repair, maintenance & calibration services.">
-        <meta property="og:image" content="https://www.forecourt.co.zw/images/forecourt-management-og-image.jpg">
+        <meta property="og:image" content="https://www.forecourt.co.zw/images/forecourt.png">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta property="og:site_name" content="Forecourt Management Solutions">
@@ -32,7 +32,7 @@
         <meta property="twitter:url" content="https://www.forecourt.co.zw/">
         <meta property="twitter:title" content="Forecourt Management Solutions - Professional Fuel Handling Equipment Services Zimbabwe">
         <meta property="twitter:description" content="Leading fuel handling equipment specialists in Zimbabwe. Professional tank calibration, fuel dispenser installation, repair, maintenance & calibration services.">
-        <meta property="twitter:image" content="https://www.forecourt.co.zw/images/forecourt-management-twitter-image.jpg">
+        <meta property="twitter:image" content="https://www.forecourt.co.zw/images/forecourt.png">
 
         <!-- Geographic Meta Tags -->
         <meta name="geo.region" content="ZW">
@@ -91,7 +91,7 @@
        <meta name="msapplication-TileColor" content="#667eea">
        
        <!-- Canonical URL -->
-       <link rel="canonical" href="https://www.forecourtmanagement.co.zw/">
+       <link rel="canonical" href="https://www.forecourt.co.zw/">
        
        <!-- Preconnect for Performance -->
        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
