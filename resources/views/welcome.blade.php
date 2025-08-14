@@ -2129,6 +2129,7 @@
         Built with modern web technologies for optimal performance.
         
         Need help? Contact us at: Mukorokojames60@gmail.com
+            website by Allyson Machaka +263772131956
         `,
         'color: #ff6b35; font-size: 16px; font-weight: bold;',
         'color: #64748b; font-size: 12px;'
