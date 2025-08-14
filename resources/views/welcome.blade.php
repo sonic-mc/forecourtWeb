@@ -48,7 +48,7 @@
     "name": "Forecourt Management Solutions",
     "description": "Professional fuel handling equipment services including tank calibration, installation, repair and calibration",
     "url": "https://www.forecourt.co.zw",
-    "telephone": "+263-XX-XXXXXXX",
+    "telephone": "+263785862182",
     "address": {
         "@type": "PostalAddress",
         "addressCountry": "ZW",
@@ -66,12 +66,12 @@
         "name": "Zimbabwe"
     },
     "services": [
-        "Tank Calibration",
-        "Fuel Dispenser Installation",
-        "Equipment Repair",
-        "System Calibration",
-        "Forecourt Management",
-        "Fuel Handling Equipment"
+        "Tank Calibration (Storage/Road Tankers)",
+        "Flowmeter & Dispenser Calibration",
+        "Leak & Pressure Testing (Acoustic Technology)",
+        "Tank Cleaning & Fuel Transshipment",
+        "Fuel Pumps, Dispensers, Submersible Pumps",
+        "Commercial and Domestic Electrical Work"
     ],
     "aggregateRating": {
         "@type": "AggregateRating",
