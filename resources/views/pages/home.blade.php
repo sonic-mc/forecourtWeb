@@ -169,7 +169,7 @@
             <div class="col-xl-4 col-lg-4">
                 <div class="single-service-style2">
                     <div class="img-holder">
-                        <img src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" style="height:250px;object-fit:cover;width:100%;">
+                        <img src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" loading="lazy" decoding="async" style="height:250px;object-fit:cover;width:100%;">
                         <div class="static-content">
                             <div class="title">
                                 <h3><a href="{{ route('services.show', $service['slug']) }}">{{ $service['title'] }}</a></h3>
@@ -235,7 +235,7 @@
                 <div class="single-portfolio-style1">
                     <div class="img-holder">
                         <div class="inner-box">
-                            <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}" style="height:280px;object-fit:cover;width:100%;">
+                            <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}" loading="lazy" decoding="async" style="height:280px;object-fit:cover;width:100%;">
                             <div class="overlay-style-one">
                                 <div class="box">
                                     <div class="inner">

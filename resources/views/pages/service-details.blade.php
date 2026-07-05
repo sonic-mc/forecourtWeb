@@ -50,7 +50,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-6">
                             <div class="single-img-box">
                                 <a class="lightbox-image" data-fancybox="service-gallery" href="{{ asset($galleryImage) }}">
-                                    <img src="{{ asset($galleryImage) }}" alt="{{ $service['title'] }} gallery" style="width:100%;height:200px;object-fit:cover;">
+                                    <img src="{{ asset($galleryImage) }}" alt="{{ $service['title'] }} gallery" loading="lazy" decoding="async" style="width:100%;height:200px;object-fit:cover;">
                                 </a>
                             </div>
                         </div>

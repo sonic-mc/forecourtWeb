@@ -44,7 +44,7 @@
 
             <div class="col-xl-6">
                 <div class="faq-image-box" data-aos="fade-left" data-aos-duration="0" data-aos-delay="0">
-                    <img src="{{ asset('images/fuel.jpg') }}" alt="Fuel handling equipment" style="width:100%;object-fit:cover;">
+                    <img src="{{ asset('images/fuel.jpg') }}" alt="Fuel handling equipment" loading="lazy" decoding="async" style="width:100%;object-fit:cover;">
                 </div>
             </div>
 

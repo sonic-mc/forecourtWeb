@@ -43,7 +43,7 @@
                 <div class="single-portfolio-style1">
                     <div class="img-holder">
                         <div class="inner-box">
-                            <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}" style="height:280px;object-fit:cover;width:100%;">
+                            <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}" loading="lazy" decoding="async" style="height:280px;object-fit:cover;width:100%;">
                             <div class="overlay-style-one">
                                 <div class="box">
                                     <div class="inner">

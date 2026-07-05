@@ -44,7 +44,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 filter-item {{ $product['category'] }}">
                 <div class="single-product-item">
                     <div class="img-holder">
-                        <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" style="width:100%;height:220px;object-fit:cover;">
+                        <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" loading="lazy" decoding="async" style="width:100%;height:220px;object-fit:cover;">
                         <div class="product-info">
                             <p>{{ $product['tag'] }}</p>
                         </div>

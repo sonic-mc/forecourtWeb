@@ -1,0 +1,124 @@
+/* =============================================================
+   Responsive fixes for Forecourt Management Solutions
+   Loaded after the template stylesheets so these rules win.
+   Template breakpoints: 1199 / 991 / 767 (this file follows them)
+   ============================================================= */
+
+/* --- Global safety nets --- */
+html,
+body {
+    overflow-x: hidden;
+}
+img,
+iframe,
+video,
+embed,
+object {
+    max-width: 100%;
+}
+
+/* Store: the template sizes the product tag chip at a fixed 50x30px,
+   which clips longer tags like "Hoses & Nozzles" at every width. */
+.single-product-item .img-holder .product-info {
+    width: auto;
+    min-width: 50px;
+    height: auto;
+    padding: 0 12px;
+    white-space: nowrap;
+}
+.single-product-item .img-holder .product-info p {
+    line-height: 30px;
+}
+
+/* ------------------------------------------------------------
+   Tablet and below
+   ------------------------------------------------------------ */
+@media only screen and (max-width: 991px) {
+
+    /* About/Welcome photo collage: the template gives image-box1 a fixed
+       370px width which overflows narrow screens; stack the photos cleanly
+       and drop the decorative shape that overlaps them once stacked. */
+    .about-style1-area .shape {
+        display: none;
+    }
+    .about-style1-image-box {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+    .about-style1-image-box .image-box1 {
+        width: 100%;
+        max-width: 570px;
+    }
+    .about-style1-image-box .image-box2 {
+        width: 45%;
+        max-width: 270px;
+    }
+}
+
+/* ------------------------------------------------------------
+   Phones
+   ------------------------------------------------------------ */
+@media only screen and (max-width: 767px) {
+
+    /* Slim the top bar: social icons already live in the mobile menu
+       and footer, so drop that row and tighten the padding. */
+    .header-top-middle {
+        display: none;
+    }
+
+    /* Headings authored with manual <br> breaks should flow naturally
+       on narrow screens instead of forcing awkward short lines. */
+    .about-style1-text-box .title h1 br,
+    .top-single-service .left h2 br,
+    .sec-title .big-title h1 br {
+        display: none;
+    }
+
+    /* Side-by-side CTA buttons stack with breathing room. */
+    .all-service-button .btn-two {
+        margin-left: 0 !important;
+        margin-top: 15px;
+    }
+    .all-service-button .btn-one,
+    .all-service-button .btn-two {
+        display: inline-block;
+    }
+
+    /* Contact page map: 450px of map dominates a phone screen. */
+    .google-map-area .map-outer iframe {
+        height: 320px !important;
+    }
+
+    /* Service details intro: generous side padding wastes phone width. */
+    .top-single-service .left,
+    .top-single-service .right {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* ------------------------------------------------------------
+   Small phones
+   ------------------------------------------------------------ */
+@media only screen and (max-width: 575px) {
+
+    /* The template keeps display headings at 50px on phones, which
+       yields 4-5 line headings on a 375px screen. Scale them down. */
+    .sec-title .big-title h1,
+    .testimonial-style1-title-box .sec-title .big-title h1,
+    .about-style1-text-box .title h1 {
+        font-size: 34px;
+        line-height: 46px;
+    }
+    .top-single-service .left h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    /* Hero slider heading */
+    .main-slider .content h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
