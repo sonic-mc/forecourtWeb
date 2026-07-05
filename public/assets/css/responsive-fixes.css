@@ -5,9 +5,13 @@
    ============================================================= */
 
 /* --- Global safety nets --- */
+/* overflow-x: hidden here would turn the body into a scroll container,
+   which stops window scroll events and silently kills the WOW.js / AOS
+   scroll-reveal animations (invisible footer & testimonial heading).
+   overflow: clip prevents sideways scrolling without that side effect. */
 html,
 body {
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 img,
 iframe,
