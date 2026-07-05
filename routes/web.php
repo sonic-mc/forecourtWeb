@@ -1,10 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\App as FacadesApp;
+use App\Http\Controllers\SitemapController;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,14 +17,18 @@ use Illuminate\Support\Facades\App as FacadesApp;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-if(FacadesApp::environment('production')) {
+
+if (App::environment('production')) {
     URL::forceScheme('https');
 }
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/services', [PageController::class, 'services'])->name('services');
+Route::get('/services/{slug}', [PageController::class, 'serviceDetails'])->name('services.show');
+Route::get('/projects', [PageController::class, 'projects'])->name('projects');
+Route::get('/faq', [PageController::class, 'faq'])->name('faq');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 Route::get('/store', [PageController::class, 'store'])->name('store');
-
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
