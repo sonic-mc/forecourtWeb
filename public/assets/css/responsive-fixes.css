@@ -5,11 +5,12 @@
    ============================================================= */
 
 /* --- Global safety nets --- */
-/* overflow-x: hidden here would turn the body into a scroll container,
-   which stops window scroll events and silently kills the WOW.js / AOS
-   scroll-reveal animations (invisible footer & testimonial heading).
-   overflow: clip prevents sideways scrolling without that side effect. */
-html,
+/* Keep this on body ONLY, and keep it clip, not hidden:
+   - overflow-x: hidden turns body into a scroll container, which stops
+     window scroll events and silently kills the WOW.js / AOS reveals
+     (invisible footer & testimonial heading).
+   - putting it on html resets the scroll position to 0 whenever the
+     template sets body{overflow:hidden} for the open mobile menu. */
 body {
     overflow-x: clip;
 }
@@ -34,10 +35,128 @@ object {
     line-height: 30px;
 }
 
+/* --- Sticky mobile hamburger ---------------------------------
+   The template hides its sticky header on small screens, so once
+   the user scrolls past the top bar there is no way to reach the
+   menu. This floating toggle appears when .main-header gets the
+   template's .fixed-header scroll class (custom.js, >=250px) and
+   both opens and closes the mobile menu. */
+.mobile-sticky-toggler {
+    display: none;
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #fd5d14;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 9999999; /* above .mobile-menu (999999) so it can close it */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 300ms ease, transform 300ms ease, visibility 300ms ease;
+}
+.mobile-sticky-toggler .icon-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 4px auto;
+    border-radius: 2px;
+    background: #ffffff;
+    transition: transform 300ms ease, opacity 300ms ease;
+}
+/* Morph to an X while the menu is open */
+body.mobile-menu-visible .mobile-sticky-toggler .icon-bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+body.mobile-menu-visible .mobile-sticky-toggler .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+body.mobile-menu-visible .mobile-sticky-toggler .icon-bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* ------------------------------------------------------------
+   Desktop
+   ------------------------------------------------------------ */
+@media only screen and (min-width: 992px) {
+
+    /* Slim the pre-nav header so the hero gets more viewport:
+       the template gives the dark welcome bar 10px padding and the
+       white logo strip 28px around a 70px logo (~130px total).
+       !important needed to beat the logo's inline max-height style. */
+    .header-top {
+        padding: 3px 0;
+    }
+    /* Smaller type and icons so the bar is a single slim line. The
+       template gives each of the three groups a rigid 390px column,
+       which wraps the tagline and pushes groups onto extra rows on
+       smaller desktops; let them size to their content on one row. */
+    .header-top .outer-box {
+        flex-wrap: nowrap;
+    }
+    .header-top-left,
+    .header-top-middle,
+    .header-top-right {
+        max-width: none;
+        width: auto;
+    }
+    .welcome-text h6 {
+        font-size: 12px;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+    .welcome-text h6 span:before {
+        font-size: 16px;
+        top: 3px;
+        padding-right: 8px;
+    }
+    .header-social-links .social-links-style1 li a {
+        font-size: 14px;
+    }
+    .header-menu ul li {
+        line-height: 22px;
+    }
+    .header-menu ul li:before {
+        top: 5px;
+        bottom: 3px;
+    }
+    .header-menu ul li a {
+        font-size: 12px;
+    }
+    .header-upper {
+        padding: 12px 0;
+    }
+    .header-upper .logo img {
+        max-height: 54px !important;
+    }
+}
+
 /* ------------------------------------------------------------
    Tablet and below
    ------------------------------------------------------------ */
 @media only screen and (max-width: 991px) {
+
+    /* Sticky hamburger: shown after scroll, or whenever the menu
+       is open so the same button always closes it. */
+    .mobile-sticky-toggler {
+        display: block;
+    }
+    .main-header.fixed-header .mobile-sticky-toggler,
+    body.mobile-menu-visible .mobile-sticky-toggler {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    /* The floating toggler is the close control on small screens;
+       the menu panel's own close icon would sit right next to it. */
+    body.mobile-menu-visible .mobile-menu .close-btn {
+        display: none;
+    }
 
     /* About/Welcome photo collage: the template gives image-box1 a fixed
        370px width which overflows narrow screens; stack the photos cleanly
@@ -68,6 +187,16 @@ object {
        and footer, so drop that row and tighten the padding. */
     .header-top-middle {
         display: none;
+    }
+
+    /* Logo strip: the template pads .header-upper 30px top and bottom
+       around a 70px logo (~130px of header). Tighten it for phones.
+       !important needed to beat the logo's inline max-height style. */
+    .header-upper {
+        padding: 10px 0;
+    }
+    .header-upper .logo img {
+        max-height: 48px !important;
     }
 
     /* Headings authored with manual <br> breaks should flow naturally

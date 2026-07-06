@@ -123,6 +123,13 @@
 <script src="{{ asset('assets/js/jQuery.style.switcher.min.js') }}"></script>
 <!-- thm custom script -->
 <script src="{{ asset('assets/js/custom.js') }}"></script>
+<script>
+    jQuery(function ($) {
+        $('.mobile-sticky-toggler').on('click', function () {
+            $('body').toggleClass('mobile-menu-visible');
+        });
+    });
+</script>
 
 @stack('scripts')
 </body>

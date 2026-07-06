@@ -181,4 +181,11 @@
     </div>
     <!-- End Mobile Menu -->
 
+    <!-- Sticky mobile nav toggle (visible on small screens after scrolling) -->
+    <button type="button" class="mobile-sticky-toggler" aria-label="Toggle navigation menu" aria-controls="navbarSupportedContent">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
 </header>

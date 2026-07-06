@@ -97,7 +97,7 @@
         <div class="container">
             <div class="outer-box">
                 <div class="copyright-text">
-                    <p>Copyright© {{ date('Y') }} All Rights Reserved <a href="{{ route('home') }}">{{ config('site.name') }}.</a></p>
+                    <p>Copyright© {{ date('Y') }} All Rights Reserved <a href="{{ route('home') }}">{{ config('site.name') }}.</a> Website by <a href="https://wa.me/263772131956" target="_blank" rel="noopener">Dataspruce <i class="fa fa-whatsapp" aria-hidden="true"></i> +263 772 131 956</a></p>
                 </div>
                 <div class="footer-menu">
                     <ul>
